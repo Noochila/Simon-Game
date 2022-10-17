@@ -3,7 +3,7 @@ var k = 1;
 var collection = [];
 var count = 0;
 function sound(s) {
-    var music = new Audio('/html/Simon/188 Simon-Game-Challenge-Starting-Files/Simon Game Challenge Starting Files/sounds/' + s + '.mp3');
+    var music = new Audio('/' + s + '.mp3');
     $(".btn." + s).addClass("pressed");
     setTimeout(function () {
         $(".btn." + s).removeClass("pressed");
@@ -81,7 +81,7 @@ function check() {
             setTimeout(function () {
                 $("body.game-over").removeClass("game-over");
             }, 100);
-            var music = new Audio('/html/Simon/188 Simon-Game-Challenge-Starting-Files/Simon Game Challenge Starting Files/sounds/wrong.mp3');
+            var music = new Audio('/sounds/wrong.mp3');
             music.play();
 
         }
