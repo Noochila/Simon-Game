@@ -2,8 +2,9 @@ var pattern = [];
 var k = 1;
 var collection = [];
 var count = 0;
+var st;
 function sound(s) {
-    var music = new Audio(s + '.mp3');
+    var music = new Audio(' s + '.mp3');
     $(".btn." + s).addClass("pressed");
     setTimeout(function () {
         $(".btn." + s).removeClass("pressed");
@@ -64,7 +65,7 @@ $(".btn").click(function (event) {
     sound(idname);
     collection.push(idname);
     console.log(collection);
-    check(); 
+   check(); 
 
 })
 
@@ -83,8 +84,10 @@ function check() {
             }, 100);
             var music = new Audio('wrong.mp3');
             music.play();
+        
 
         }
+     
 
        
     }
